@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Tetris - Arcade Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>TETRIS</h1>
+            <button id="muteBtn" class="icon-btn" aria-label="Toggle Sound">
+                <span class="icon">🔊</span>
+            </button>
+        </header>
+
+        <div class="game-layout">
+            <!-- Left Panel: Stats -->
+            <div class="side-panel left-panel">
+                <div class="stat-card">
+                    <div class="stat-label">Score</div>
+                    <div id="score" class="stat-value">0</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Level</div>
+                    <div id="level" class="stat-value">1</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Lines</div>
+                    <div id="lines" class="stat-value">0</div>
+                </div>
+                <div class="stat-card high-score">
+                    <div class="stat-label">High Score</div>
+                    <div id="highScore" class="stat-value">0</div>
+                </div>
+            </div>
+
+            <!-- Center: Game Board -->
+            <div class="game-container">
+                <canvas id="gameCanvas"></canvas>
+                <div id="gameOverlay" class="game-overlay hidden">
+                    <div class="overlay-content">
+                        <h2 id="overlayTitle">TETRIS</h2>
+                        <p id="overlayMessage">Press Start to Begin</p>
+                        <button id="startBtn" class="game-btn">Start Game</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Panel: Next Piece & Controls -->
+            <div class="side-panel right-panel">
+                <div class="next-piece-container">
+                    <div class="stat-label">Next</div>
+                    <canvas id="nextPieceCanvas"></canvas>
+                </div>
+                
+                <div class="controls-info">
+                    <h3>Controls</h3>
+                    <div class="control-item">
+                        <span class="key">←→</span>
+                        <span>Move</span>
+                    </div>
+                    <div class="control-item">
+                        <span class="key">↓</span>
+                        <span>Soft Drop</span>
+                    </div>
+                    <div class="control-item">
+                        <span class="key">↑</span>
+                        <span>Rotate</span>
+                    </div>
+                    <div class="control-item">
+                        <span class="key">Space</span>
+                        <span>Hard Drop</span>
+                    </div>
+                    <div class="control-item">
+                        <span class="key">P</span>
+                        <span>Pause</span>
+                    </div>
+                </div>
+
+                <div class="game-controls">
+                    <button id="pauseBtn" class="game-btn secondary" disabled>Pause</button>
+                    <button id="restartBtn" class="game-btn secondary" disabled>Restart</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Touch Controls -->
+        <div class="mobile-controls">
+            <div class="touch-controls">
+                <button class="touch-btn" id="rotateBtn">↻</button>
+                <div class="direction-pad">
+                    <button class="touch-btn" id="leftBtn">←</button>
+                    <button class="touch-btn" id="downBtn">↓</button>
+                    <button class="touch-btn" id="rightBtn">→</button>
+                </div>
+                <button class="touch-btn" id="dropBtn">⬇</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
