@@ -2,6 +2,8 @@
 
 A modern, browser-based Tetris game with a stunning neon arcade theme.
 
+**[Play Now](https://alfredang.github.io/tetris-game/)**
+
 ![Tetris Gameplay](screenshots/gameplay.png)
 
 ## How to Play
