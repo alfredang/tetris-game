@@ -4,8 +4,6 @@ A modern, browser-based Tetris game with a stunning neon arcade theme.
 
 **[Play Now](https://alfredang.github.io/tetris-game/)**
 
-![Tetris Gameplay](screenshots/gameplay.png)
-
 ## How to Play
 
 ### Objective
@@ -22,8 +20,6 @@ Stack falling tetromino pieces to complete horizontal lines. When a line is comp
 | `Space` | Hard drop (instant drop) |
 | `P` | Pause/Resume |
 
-![Controls](screenshots/controls.png)
-
 ### Mobile Controls
 
 On mobile devices, touch controls appear at the bottom of the screen:
@@ -38,21 +34,19 @@ On mobile devices, touch controls appear at the bottom of the screen:
 
 There are 7 different pieces, each with a unique shape and color:
 
-| Piece | Shape | Color |
-|-------|-------|-------|
-| I | ████ | Cyan |
-| O | ██<br>██ | Yellow |
-| T | ▄█▄ | Purple |
-| S | ▄██<br>██ | Green |
-| Z | ██▄<br>▄██ | Red |
-| J | █<br>███ | Blue |
-| L | ▄▄█<br>███ | Orange |
+| Piece | Color |
+|-------|-------|
+| I | Cyan |
+| O | Yellow |
+| T | Purple |
+| S | Green |
+| Z | Red |
+| J | Blue |
+| L | Orange |
 
 ### Ghost Piece
 
 A transparent "ghost" piece shows where your current piece will land, helping you plan your moves.
-
-![Ghost Piece](screenshots/ghost-piece.png)
 
 ### Scoring
 
@@ -83,9 +77,7 @@ Your high score is saved locally in your browser and persists between sessions.
 - **Next Piece Preview** — See the upcoming piece to plan ahead
 - **Pause/Resume** — Take a break without losing progress
 
-![Game Over Screen](screenshots/game-over.png)
-
-## Running the Game
+## Running Locally
 
 Simply open `index.html` in any modern web browser:
 
@@ -106,12 +98,6 @@ Works in all modern browsers:
 - Firefox
 - Safari
 - Edge
-
-## Screenshots
-
-| Main Menu | Gameplay | Game Over |
-|-----------|----------|-----------|
-| ![Menu](screenshots/menu.png) | ![Play](screenshots/gameplay.png) | ![End](screenshots/game-over.png) |
 
 ---
 
