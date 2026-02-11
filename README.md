@@ -91,6 +91,24 @@ open tetris-game/index.html
 
 No build steps or dependencies required!
 
+### Docker
+
+You can also run the game in a Docker container:
+
+```bash
+# Clone the repository
+git clone https://github.com/alfredang/tetris-game.git
+cd tetris-game
+
+# Build the image
+docker build -t tetris-game .
+
+# Run the container
+docker run -d -p 8080:80 tetris-game
+```
+
+Then open [http://localhost:8080](http://localhost:8080) in your browser.
+
 ## Browser Support
 
 Works in all modern browsers:
