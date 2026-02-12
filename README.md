@@ -79,6 +79,16 @@ Your high score is saved locally in your browser and persists between sessions.
 - **Next Piece Preview** — See the upcoming piece to plan ahead
 - **Pause/Resume** — Take a break without losing progress
 
+## Quick Start with Docker Hub
+
+The fastest way to play — pull the pre-built image directly from [Docker Hub](https://hub.docker.com/r/tertiaryinfotech/tetris-game):
+
+```bash
+docker run -d -p 8080:80 tertiaryinfotech/tetris-game
+```
+
+Then open [http://localhost:8080](http://localhost:8080) in your browser. That's it! 🎮
+
 ## Running Locally
 
 Simply open `index.html` in any modern web browser:
